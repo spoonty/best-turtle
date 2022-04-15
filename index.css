@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: url("./assets/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.turtle-window {
+    width: 400px;
+    height: 650px;
+    background: #ddffd8;
+    display: grid;
+    grid-template-rows: 120px 120px 120px 120px;
+    align-content: space-around;
+    justify-items: center;
+}
+
+.turtle {
+    width: 90%;
+    height: 100%;
+    background: white;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+.picture {
+    width: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.info {
+    display: grid;
+    grid-template-rows: 60% 40%;
+    align-items: center;
+    justify-items: center;
+}
+
+.name {
+    font-size: 24px;
+    color: #656565;
+    font-weight: bold;
+}
+
+.text {
+    font-family: Tahoma;
+}
