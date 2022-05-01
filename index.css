@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 html, body {
@@ -10,11 +13,9 @@ html, body {
 }
 
 body {
-    /*background-image: url("./assets/background.jpg");*/
-    background-color: green;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: rgb(118,214,141);
+    background:
+            linear-gradient(45deg, rgba(118,214,141,1) 0%, rgba(22,183,69,1) 46%, rgba(143,255,0,1) 100%);
 }
 
 .wrapper {
@@ -27,30 +28,36 @@ body {
 .container {
     width: 400px;
     height: 650px;
-    background: #e1e1e1;
-    display: grid;
-    grid-template-rows: 120px 120px 120px 120px;
-    align-content: space-around;
-    justify-items: center;
+    background: rgba(230, 234, 243, 0.8);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .turtle {
     width: 90%;
-    height: 100%;
+    height: 132px;
+    border: 2px rgba(0, 0, 0, 0.2) solid;
     background: white;
-    border: 1px solid black;
+    border-radius: 20px;
     display: grid;
     grid-template-columns: 35% 65%;
-    cursor: pointer;
+    cursor: all-scroll;
+    transition: .3s;
 }
 
 .turtle:hover {
-    background: #f1f1f1;
+    background: rgba(255, 255, 255, 0.8);
+    height: 140px;
+    width: 93%;
 }
 
 .picture {
     width: 90px;
-    border-radius: 50%;
+    border-radius: 20px;
+    filter: brightness(110%);
     display: flex;
     align-self: center;
     justify-self: center;
@@ -66,13 +73,9 @@ body {
 .name {
     font-size: 24px;
     color: #656565;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .dragging {
     opacity: .5;
-}
-
-.text {
-    font-family: Tahoma;
 }
